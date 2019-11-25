@@ -59,6 +59,27 @@ Define a function `maxOfThree` that takes three numbers as arguments and returns
 console.log(maxOfThree(6, 9, 1));
 ```
 
+function maxOfThree(a,b,c){
+  
+  let i = 0 ;
+  var arr = []
+  arr.push(a)
+  arr.push(b)
+  arr.push(c)
+  while (i < arr.length)
+  {
+    var maxValue = Math.max.apply(null, arr);
+    
+    i++
+  }
+  console.log(maxValue)
+}
+
+
+
+maxOfThree(6, 9, 1)
+
+
 > => 9
 
 
@@ -70,6 +91,30 @@ Write a function `printLongestWord` that accepts a single argument, an **array o
 ```javascript
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 ```
+
+
+function printLongestWord (str){
+  let i = 0 ; 
+var n = [] ;
+  while ( i < str.length){
+    var l = str[i].length;
+//     if(l > 11){
+//     n.push(l)
+//     }
+   n.push(l)
+    i++
+    
+  }
+  var maxValue = Math.max.apply(null, n)
+   console.log(maxValue)
+   
+}
+
+
+
+
+printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"])
+
 
 > => "Peanutbutter"
 
@@ -87,6 +132,18 @@ power of 2` is 225.
 console.log(transmogrify(5, 3, 2));
 ```
 
+
+function transmogrify(a,b,c){
+  
+var mul = a * b ;
+  mul = Math.pow(mul ,c)
+  console.log(mul)
+  
+}
+
+transmogrify(5, 3, 2)
+
+/// i still dont know why we need a while loop and make it a longer way
 > => 225
 
 <br>
